@@ -8,3 +8,25 @@
     height: var(--mobile-spacing);
   }
 }
+
+/* Balance Left */
+.balance-left-h1-block,
+.balance-left-h2-block,
+.balance-left-p-block {
+  max-width: 2000px;
+  padding: 20px;
+}
+
+/* full-span-image */
+
+.full-span-image {
+  background-size: cover;
+  background-position: center;
+  height: var(--desktop-height);
+}
+
+@media (max-width: 767px) {
+  .full-span-image {
+    height: var(--mobile-height);
+  }
+}

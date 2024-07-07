@@ -4,3 +4,23 @@
   border: 1px dashed #ccc;
   margin: 20px 0;
 }
+
+/* Balance Left */
+.balance-left-h1-block,
+.balance-left-h2-block,
+.balance-left-p-block {
+  max-width: 2000px;
+  padding: 20px;
+}
+
+/* full-span-image */
+.full-span-image-preview {
+  background-size: cover;
+  background-position: center;
+}
+
+.full-span-image-placeholder {
+  background-color: #f0f0f0;
+  border: 1px dashed #ccc;
+  height: 300px;
+}
