@@ -26,13 +26,11 @@ registerBlockType("rochester-dev/balance-left-h2", {
     const { content, rightSpace } = attributes;
     const blockProps = useBlockProps({
       className: "balance-left-h2-block",
+      style: { "--right-space": `${rightSpace}%` },
     });
 
     return (
-      <div
-        {...blockProps}
-        style={{ marginRight: `${rightSpace}%`, maxWidth: "2000px" }}
-      >
+      <div {...blockProps}>
         <InspectorControls>
           <PanelBody
             title={__("Right Space Settings", "rochester-dev-content-blocks")}
@@ -62,13 +60,11 @@ registerBlockType("rochester-dev/balance-left-h2", {
     const { content, rightSpace } = attributes;
     const blockProps = useBlockProps.save({
       className: "balance-left-h2-block",
+      style: { "--right-space": `${rightSpace}%` },
     });
 
     return (
-      <div
-        {...blockProps}
-        style={{ marginRight: `${rightSpace}%`, maxWidth: "2000px" }}
-      >
+      <div {...blockProps}>
         <RichText.Content tagName="h2" value={content} />
       </div>
     );

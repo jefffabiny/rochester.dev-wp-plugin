@@ -9,8 +9,14 @@
 .balance-left-h1-block,
 .balance-left-h2-block,
 .balance-left-p-block {
-  max-width: 2000px;
-  padding: 20px;
+  margin: auto;
+  max-width: 1200px;
+  padding: 20px 0 20px 20px;
+}
+.balance-left-h1-block > h1,
+.balance-left-h2-block > h2,
+.balance-left-p-block > p {
+  padding-right: var(--right-space, 50%);
 }
 
 /* full-span-image */
